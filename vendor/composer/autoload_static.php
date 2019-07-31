@@ -113,6 +113,7 @@ class ComposerStaticInit963a0812a349ccfbd19304eea2f03bc6
         ),
         'D' => 
         array (
+            'Drupal\\ui_patterns\\' => 19,
             'Drupal\\Driver\\' => 14,
             'Drupal\\Core\\' => 12,
             'Drupal\\Console\\Core\\' => 20,
@@ -344,6 +345,10 @@ class ComposerStaticInit963a0812a349ccfbd19304eea2f03bc6
         'Egulias\\EmailValidator\\' => 
         array (
             0 => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator',
+        ),
+        'Drupal\\ui_patterns\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/web/modules/contrib/ui_patterns/src',
         ),
         'Drupal\\Driver\\' => 
         array (
@@ -2895,6 +2900,33 @@ class ComposerStaticInit963a0812a349ccfbd19304eea2f03bc6
         'Drupal\\Tests\\Driver\\Drupal7FieldHandlerTest' => __DIR__ . '/..' . '/drupal/drupal-driver/tests/Drupal/Tests/Driver/Drupal7FieldHandlerTest.php',
         'Drupal\\Tests\\Driver\\DrushDriverTest' => __DIR__ . '/..' . '/drupal/drupal-driver/tests/Drupal/Tests/Driver/DrushDriverTest.php',
         'Drupal\\Tests\\Driver\\FieldHandlerAbstractTest' => __DIR__ . '/..' . '/drupal/drupal-driver/tests/Drupal/Tests/Driver/FieldHandlerAbstractTest.php',
+        'Drupal\\ui_patterns\\Annotation\\UiPattern' => __DIR__ . '/../..' . '/web/modules/contrib/ui_patterns/src/Annotation/UiPattern.php',
+        'Drupal\\ui_patterns\\Annotation\\UiPatternsSource' => __DIR__ . '/../..' . '/web/modules/contrib/ui_patterns/src/Annotation/UiPatternsSource.php',
+        'Drupal\\ui_patterns\\Definition\\ArrayAccessDefinitionTrait' => __DIR__ . '/../..' . '/web/modules/contrib/ui_patterns/src/Definition/ArrayAccessDefinitionTrait.php',
+        'Drupal\\ui_patterns\\Definition\\PatternDefinition' => __DIR__ . '/../..' . '/web/modules/contrib/ui_patterns/src/Definition/PatternDefinition.php',
+        'Drupal\\ui_patterns\\Definition\\PatternDefinitionField' => __DIR__ . '/../..' . '/web/modules/contrib/ui_patterns/src/Definition/PatternDefinitionField.php',
+        'Drupal\\ui_patterns\\Definition\\PatternDefinitionVariant' => __DIR__ . '/../..' . '/web/modules/contrib/ui_patterns/src/Definition/PatternDefinitionVariant.php',
+        'Drupal\\ui_patterns\\Definition\\PatternSourceField' => __DIR__ . '/../..' . '/web/modules/contrib/ui_patterns/src/Definition/PatternSourceField.php',
+        'Drupal\\ui_patterns\\Element\\Pattern' => __DIR__ . '/../..' . '/web/modules/contrib/ui_patterns/src/Element/Pattern.php',
+        'Drupal\\ui_patterns\\Element\\PatternContext' => __DIR__ . '/../..' . '/web/modules/contrib/ui_patterns/src/Element/PatternContext.php',
+        'Drupal\\ui_patterns\\Element\\PatternPreview' => __DIR__ . '/../..' . '/web/modules/contrib/ui_patterns/src/Element/PatternPreview.php',
+        'Drupal\\ui_patterns\\Exception\\PatternDefinitionException' => __DIR__ . '/../..' . '/web/modules/contrib/ui_patterns/src/Exception/PatternDefinitionException.php',
+        'Drupal\\ui_patterns\\Exception\\PatternRenderException' => __DIR__ . '/../..' . '/web/modules/contrib/ui_patterns/src/Exception/PatternRenderException.php',
+        'Drupal\\ui_patterns\\Form\\PatternDisplayFormTrait' => __DIR__ . '/../..' . '/web/modules/contrib/ui_patterns/src/Form/PatternDisplayFormTrait.php',
+        'Drupal\\ui_patterns\\Plugin\\Deriver\\AbstractPatternsDeriver' => __DIR__ . '/../..' . '/web/modules/contrib/ui_patterns/src/Plugin/Deriver/AbstractPatternsDeriver.php',
+        'Drupal\\ui_patterns\\Plugin\\Deriver\\AbstractYamlPatternsDeriver' => __DIR__ . '/../..' . '/web/modules/contrib/ui_patterns/src/Plugin/Deriver/AbstractYamlPatternsDeriver.php',
+        'Drupal\\ui_patterns\\Plugin\\Deriver\\PatternsDeriverInterface' => __DIR__ . '/../..' . '/web/modules/contrib/ui_patterns/src/Plugin/Deriver/PatternsDeriverInterface.php',
+        'Drupal\\ui_patterns\\Plugin\\Deriver\\YamlPatternsDeriverInterface' => __DIR__ . '/../..' . '/web/modules/contrib/ui_patterns/src/Plugin/Deriver/YamlPatternsDeriverInterface.php',
+        'Drupal\\ui_patterns\\Plugin\\PatternBase' => __DIR__ . '/../..' . '/web/modules/contrib/ui_patterns/src/Plugin/PatternBase.php',
+        'Drupal\\ui_patterns\\Plugin\\PatternInterface' => __DIR__ . '/../..' . '/web/modules/contrib/ui_patterns/src/Plugin/PatternInterface.php',
+        'Drupal\\ui_patterns\\Plugin\\PatternSourceBase' => __DIR__ . '/../..' . '/web/modules/contrib/ui_patterns/src/Plugin/PatternSourceBase.php',
+        'Drupal\\ui_patterns\\Plugin\\PatternSourceInterface' => __DIR__ . '/../..' . '/web/modules/contrib/ui_patterns/src/Plugin/PatternSourceInterface.php',
+        'Drupal\\ui_patterns\\Plugin\\UiPatterns\\Source\\FieldSource' => __DIR__ . '/../..' . '/web/modules/contrib/ui_patterns/src/Plugin/UiPatterns/Source/FieldSource.php',
+        'Drupal\\ui_patterns\\Template\\TwigExtension' => __DIR__ . '/../..' . '/web/modules/contrib/ui_patterns/src/Template/TwigExtension.php',
+        'Drupal\\ui_patterns\\TypedData\\PatternDataDefinition' => __DIR__ . '/../..' . '/web/modules/contrib/ui_patterns/src/TypedData/PatternDataDefinition.php',
+        'Drupal\\ui_patterns\\UiPatterns' => __DIR__ . '/../..' . '/web/modules/contrib/ui_patterns/src/UiPatterns.php',
+        'Drupal\\ui_patterns\\UiPatternsManager' => __DIR__ . '/../..' . '/web/modules/contrib/ui_patterns/src/UiPatternsManager.php',
+        'Drupal\\ui_patterns\\UiPatternsSourceManager' => __DIR__ . '/../..' . '/web/modules/contrib/ui_patterns/src/UiPatternsSourceManager.php',
         'EasyRdf_Collection' => __DIR__ . '/..' . '/easyrdf/easyrdf/lib/EasyRdf/Collection.php',
         'EasyRdf_Container' => __DIR__ . '/..' . '/easyrdf/easyrdf/lib/EasyRdf/Container.php',
         'EasyRdf_Exception' => __DIR__ . '/..' . '/easyrdf/easyrdf/lib/EasyRdf/Exception.php',

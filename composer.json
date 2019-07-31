@@ -26,6 +26,7 @@
         "drupal/paragraphs": "^1.8",
         "drupal/pathauto": "^1.4",
         "drupal/twig_xdebug": "^1.1",
+        "drupal/ui_patterns": "^1.1",
         "drush-ops/behat-drush-endpoint": "^9.3",
         "pantheon-systems/quicksilver-pushback": "~1",
         "rvtraveller/qs-composer-installer": "^1.1",
