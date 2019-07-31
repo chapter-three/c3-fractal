@@ -1,0 +1,36 @@
+uuid: 212a7e78-f9c6-48e8-b9ce-c168a4ecb4df
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:title_bar:ed93a36e-95ee-4bfe-b8db-1d5ae5ae99cb'
+  enforced:
+    module:
+      - kickstart_content
+  module:
+    - block_content
+    - system
+  theme:
+    - fractal
+_core:
+  default_config_hash: EzxQGeuvJFRUhLL_NVapVJs3mcScg58vE3BXcNJFQGY
+id: fractal_title_bar_faqs
+theme: fractal
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:ed93a36e-95ee-4bfe-b8db-1d5ae5ae99cb'
+settings:
+  id: 'block_content:ed93a36e-95ee-4bfe-b8db-1d5ae5ae99cb'
+  label: 'Title bar: FAQs'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/faq\r\n/faq/*"
+    negate: false
+    context_mapping: {  }

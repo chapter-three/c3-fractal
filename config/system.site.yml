@@ -1,11 +1,11 @@
-uuid: f109eabe-af1c-4499-bef3-5ccce78adfa0
+uuid: 3c0c3a7d-f9ea-4a57-95cb-21f5e9a1bfb5
 name: Fractal
-mail: hosting@chapterthree.com
+mail: jacine@chapterthree.com
 slogan: ''
 page:
   403: ''
   404: ''
-  front: /node
+  front: /blog
 admin_compact_mode: false
 weight_select_max: 100
 langcode: en

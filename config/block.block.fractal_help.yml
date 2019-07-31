@@ -1,0 +1,22 @@
+uuid: 1d07ef33-ac83-40c6-9cf2-6149444adfa8
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - fractal
+_core:
+  default_config_hash: _o-Fm2aXxbQLXGlN5phZ-35mV-kLCwEFAqT_W9J4Hus
+id: fractal_help
+theme: fractal
+region: content
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

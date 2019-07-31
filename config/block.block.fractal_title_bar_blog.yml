@@ -1,0 +1,36 @@
+uuid: 1c3e72d8-1af1-41b9-9d3b-c46510599be2
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:title_bar:bae58a0b-4f55-484f-9ee5-f2ecbf7c715e'
+  enforced:
+    module:
+      - kickstart_content
+  module:
+    - block_content
+    - system
+  theme:
+    - fractal
+_core:
+  default_config_hash: wgu1Nc-o5wXIcvBTWcP5doxJ9_5FJf19atQPR4DFukM
+id: fractal_title_bar_blog
+theme: fractal
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:bae58a0b-4f55-484f-9ee5-f2ecbf7c715e'
+settings:
+  id: 'block_content:bae58a0b-4f55-484f-9ee5-f2ecbf7c715e'
+  label: 'Title bar: Blog'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/blog\r\n/blog/*\r\n/article/*"
+    negate: false
+    context_mapping: {  }

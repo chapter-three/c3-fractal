@@ -1,0 +1,27 @@
+uuid: 1765ba73-095b-44d3-bb7c-1d8c4d285881
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - fractal
+_core:
+  default_config_hash: xu7scAOa2R5ofuITW63BEXWiOb7F_subVpwGoUGlx_Y
+id: fractal_main_menu
+theme: fractal
+region: navbar_left
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

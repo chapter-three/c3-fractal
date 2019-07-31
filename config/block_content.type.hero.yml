@@ -1,0 +1,10 @@
+uuid: 4fbdc0fe-171f-49c4-895c-9b4f0c3ed9aa
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 8ug73UPvg6deM9lRd9if57HmJ3FjyKNLlKGj04R_1pQ
+id: hero
+label: 'Hero block'
+revision: 1
+description: 'A <em>Hero</em>, which utilizes a Paragraph by the same name, contains a background image, title, summary, and link(s). The background image is scaled to fill the browser''s width.  '

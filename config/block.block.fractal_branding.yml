@@ -1,0 +1,25 @@
+uuid: b3272b9d-161c-438a-976f-db495c12ca65
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - fractal
+_core:
+  default_config_hash: 4plTa1P6mAFndXF8qzdv1TxKaxxCjzWCvuFdWzwXKEU
+id: fractal_branding
+theme: fractal
+region: navbar_branding
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: false
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

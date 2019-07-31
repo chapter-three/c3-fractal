@@ -1,0 +1,22 @@
+uuid: 9cf795ed-a4f7-4ea6-88f5-8c09f923e8dd
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - fractal
+_core:
+  default_config_hash: x6IHMoW7x2qqVm5yf5zeaePVETKvMDyqXFHdOYJySFI
+id: fractal_drupal
+theme: fractal
+region: copyright
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

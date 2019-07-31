@@ -1,0 +1,27 @@
+uuid: 85d1b353-2434-471c-b133-f3dd700c5748
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - fractal
+_core:
+  default_config_hash: k6J2DDASjD3EqqsFyL2Mil9D65IiVM1_MguV8fCXRp4
+id: fractal_title
+theme: fractal
+region: header
+weight: 10
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "/article/*\r\n/blog\r\n/contact\r\n/faq\r\n/forum\r\n/forum/*\r\n/search\r\n/search/*\r\n/user/*/plans"
+    negate: true
+    context_mapping: {  }

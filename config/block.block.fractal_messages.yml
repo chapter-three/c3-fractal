@@ -1,0 +1,22 @@
+uuid: c2e306a7-153a-4825-bb6e-82eebe9299d3
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - fractal
+_core:
+  default_config_hash: 79OOm00iQwz40VG5FNau8Q0TKRmUZQo_dw4BwVBLd10
+id: fractal_messages
+theme: fractal
+region: content
+weight: 1
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 252396a7-414e-4457-90c9-a2a8e65d000b
+langcode: en
+status: true
+dependencies:
+  theme:
+    - fractal
+_core:
+  default_config_hash: EsY75QVrd4uJoaKLxYJQifYScaPdapUSI-H1jJVwpgQ
+id: fractal_tabs
+theme: fractal
+region: tasks
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }
