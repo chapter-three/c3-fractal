@@ -23,7 +23,7 @@ regions:
   copyright: Copyright
 
 component-libraries:
-  patterns:
+  fractal:
     paths:
-      - ../../../libraries/fractal
+      - ../../../libraries/fractal/fractal/components
 
