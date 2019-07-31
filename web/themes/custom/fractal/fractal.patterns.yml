@@ -19,3 +19,9 @@ blockquote:
       label: Attribution
       description: Quote attribution.
       preview: Albert Einstein
+  libraries:
+    - fractal/blockquote
+    - blockquote:
+       css:
+         component:
+           ../../../libraries/fractal/fractal/components/blockquote/blockquote.css: {}
