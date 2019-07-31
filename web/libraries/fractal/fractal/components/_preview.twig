@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    {% for asset in _target.resources.assets %}
+      {% if asset.isCSS %}
+        <link href="../raw/{{ _target.baseHandle }}/{{ asset.base }}" rel="stylesheet">
+      {% endif %}
+      {% if asset.isJS %}
+        <script src="../raw/{{ _target.baseHandle }}/{{ asset.base }}"></script>
+      {% endif %}
+    {% endfor %}
+    <title>Preview Layout</title>
+  </head>
+  <body>
+    {{ yield }}
+  </body>
+</html>
+z
