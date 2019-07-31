@@ -31,3 +31,4 @@ fractal.docs.set('path', path.join(__dirname, 'docs'));
 fractal.web.set('static.path', path.join(__dirname, 'public'));
 fractal.components.engine('@frctl/twig');
 fractal.components.set('ext', '.twig');
+fractal.web.set('builder.dest', path.join(__dirname, 'build'));

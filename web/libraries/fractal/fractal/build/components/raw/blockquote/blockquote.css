@@ -1,0 +1,11 @@
+.blockquote {
+  font-family: serif;
+  background: #ddd;
+  border: solid 1px #ccc;
+  padding: 1rem;
+}
+
+.blockquote__attribution {
+  font-family: sans-serif;
+  margin-top: 1rem;
+}
