@@ -7,7 +7,17 @@ dependencies:
     - field.field.paragraph.blockquote.field_text
     - paragraphs.paragraphs_type.blockquote
   module:
+    - field_layout
     - text
+  theme:
+    - fractal
+third_party_settings:
+  field_layout:
+    id: pattern_blockquote
+    settings:
+      pattern:
+        field_templates: only_content
+        variant: default
 _core:
   default_config_hash: m5EFKI6zaa5DLY-YQK5AC1UGt_E126-tO2XPPojrK3I
 id: paragraph.blockquote.default
@@ -16,18 +26,18 @@ bundle: blockquote
 mode: default
 content:
   field_blockquote_source:
+    type: string
     weight: 1
+    region: attribution
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
-    region: content
   field_text:
     weight: 0
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
-    region: content
+    region: quote
 hidden: {  }
