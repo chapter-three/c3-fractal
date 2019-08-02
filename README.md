@@ -29,8 +29,8 @@ _* The Github repo is a mirror (meant for easily browsing the codebase). It's on
       - Blockquote paragraph (default display)
       - Card paragraph (default display)
       - Button link paragraph (default display)
-  2.
-
+  2. https://dev-c3-fractal.pantheonsite.io/faq: This is a View, configured to use the UI Patterns row display, along with Views fields that are mapped to the Card pattern.
+  3. https://dev-c3-fractal.pantheonsite.io/blog: This is a View, configured to render "teaser" entity display for article content type. The "Teaser" view mode is configured to use the "Card" pattern.s
 
 ## Local Setup
 
