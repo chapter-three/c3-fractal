@@ -1,0 +1,1 @@
+This component (taken from Knapsack), _wants_ to support a nested button component. This is a potentially problematic thing with UI Patterns, and just patterns in general.  We want to render fields, which means this would be down a level, and not available to the card component directly in some cases.

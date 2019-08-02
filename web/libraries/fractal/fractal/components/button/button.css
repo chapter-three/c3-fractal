@@ -1,0 +1,14 @@
+.button {
+  background-color: #2196f3;
+  border: solid 1px #2196f3;
+  color: #fff;
+  display: inline-block;
+  line-height: 1.1;
+  margin-top: 0.5rem;
+  padding: 0.4rem 1.2rem;
+  text-decoration: none;
+}
+
+.button + .button {
+  margin-left: 1rem;
+}
