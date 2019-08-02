@@ -9,7 +9,7 @@
     <p class="card__body">{{ body }}</p>
     {% if buttons %}
       {% for button in buttons %}
-        {% include '@button' with { button: button } %}
+        {# {% include '@button' with { button: button } %} #}
       {% endfor %}
     {% endif %}
   </div>
