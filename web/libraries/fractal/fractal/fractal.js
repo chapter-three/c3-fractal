@@ -11,6 +11,18 @@ const path = require('path');
 const fractal = module.exports = require('@frctl/fractal').create();
 
 /*
+ * Setup Twig + Drupal Adapter
+ */
+const twigAdapter = require('@wearewondrous/fractal-twig-drupal-adapter');
+const twig = twigAdapter({
+  handlePrefix: '@fractal/',
+});
+
+fractal.components.engine(twig);
+fractal.components.set('ext', '.twig');
+
+
+/*
  * Give your project a title.
  */
 fractal.set('project.title', 'Fractal');
@@ -30,5 +42,3 @@ fractal.docs.set('path', path.join(__dirname, 'docs'));
  */
 fractal.web.set('static.path', path.join(__dirname, 'public'));
 fractal.web.set('builder.dest', path.join(__dirname, 'build'));
-fractal.components.engine('@frctl/twig');
-fractal.components.set('ext', '.twig');
