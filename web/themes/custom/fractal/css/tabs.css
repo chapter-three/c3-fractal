@@ -141,6 +141,7 @@ nav.tabs {
   height: 40px;
   line-height: 36px;
   position: relative;
+  text-decoration: none;
 }
 
 .tabs--primary a:hover {
