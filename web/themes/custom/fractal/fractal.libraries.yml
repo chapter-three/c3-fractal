@@ -3,3 +3,4 @@ base:
     theme:
       css/style.css: {}
       css/tabs.css: {}
+      css/patterns.css: {}

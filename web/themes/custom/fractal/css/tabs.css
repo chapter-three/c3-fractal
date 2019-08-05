@@ -136,6 +136,7 @@ nav.tabs {
   border-radius: 0;
   background-color: var(--color-gray-lightest);
   color: #000;
+  display: block;
   padding: 0 1.85rem;
   height: 40px;
   line-height: 36px;

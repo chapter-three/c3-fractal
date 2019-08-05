@@ -1,8 +1,9 @@
 :root {
   --color-blue: #3f51b5;
-  --color-blue-light: #2196f3;
-  --color-gray-lightest: #ededed;
+  --color-blue-light: #5c6bc0;
+  --color-gray: #58585;
   --color-gray-light: #ccc;
+  --color-gray-lightest: #ededed;
 }
 /*
  * Global
@@ -33,6 +34,25 @@ h4 a {
   color: var(--color-blue);
   text-decoration: none;
 }
+
+hr {
+  background: none;
+  border-bottom: solid 1px var(--color-gray-lightest);
+  border-width: 0 0 1px 0;
+  margin: 2rem 0;
+}
+
+table {
+  font-size: 0.923rem;
+  border: solid 1px var(--color-gray-lightest);
+}
+th, td {
+  border-bottom: 1px solid var(--color-gray-lightest);
+  text-align: left;
+  table-layout: fixed;
+  padding: 0.5rem;
+}
+
 
 /*
  * Sticky footer
