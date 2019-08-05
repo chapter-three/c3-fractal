@@ -247,10 +247,7 @@
                                 <pre><span class="hljs-selector-class">.card</span> {
   <span class="hljs-attribute">border</span>: solid <span class="hljs-number">1px</span> <span class="hljs-number">#ededed</span>;
   <span class="hljs-attribute">padding</span>: <span class="hljs-number">1rem</span>;
-}
-
-<span class="hljs-selector-class">.card</span> + <span class="hljs-selector-class">.card</span> {
-  <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">1rem</span>;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">1rem</span> <span class="hljs-number">0</span>;
 }
 </pre>
                             </code>
@@ -268,7 +265,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">95 Bytes</span>
+                    <span class="Meta-value">74 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -320,7 +317,17 @@
     <div class="Browser-panel Browser-notes" data-role="tab-panel" id="browser-565e0635858b22c317e0710eea538289-panel-notes">
     <div class="Prose Prose--condensed">
         
-        <p>This component (taken from Knapsack), <em>wants</em> to support a nested button component. This is a potentially problematic thing with UI Patterns, and just patterns in general.  We want to render fields, which means this would be down a level, and not available to the card component directly in some cases.</p>
+        <p>This component requires a nested button component. Fractal, and most other libraries have their own supported syntax for nesting. It looks something like this:</p>
+<code class="lang-twig"><pre><span class="xml"></span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">if</span></span> buttons %}</span><span class="xml">
+  </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">for</span></span> button in buttons %}</span><span class="xml">
+    </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">include</span></span> '@button' with { button: button } %}</span><span class="xml">
+  </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">endfor</span></span> %}</span><span class="xml">
+</span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">endif</span></span> %}</span><span class="xml"></span></pre></code><p>Drupal will not be able to use this. Twig namespace support is critical for this to work. Using the <a href="https://github.com/wearewondrous/fractal-twig-drupal-adapter">Fractal Twig Drupal Adapter</a> in the Fractal instance, and using namespaces to handle nested components is required.  So, instead of the above, you’d have:</p>
+<code class="lang-twig"><pre><span class="xml"></span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">if</span></span> buttons %}</span><span class="xml">
+  </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">for</span></span> button in buttons %}</span><span class="xml">
+    </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">include</span></span> "@fractal/button/button.twig" with { button: button } %}</span><span class="xml">
+  </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">endfor</span></span> %}</span><span class="xml">
+</span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">endif</span></span> %}</span><span class="xml"></span></pre></code><p>Generally, avoiding nesting, unless it’s necessary sense is a good idea. Too much of it ends up with really complex data structures that make it very difficult to use in Drupal.</p>
 
         
     </div>

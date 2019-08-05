@@ -14,7 +14,7 @@
 <link rel="stylesheet" href="themes/mandelbrot/css/default.css?cachebust=1.2.1" type="text/css">
 
 
-<title>Fractal | Fractal</title>
+<title>Fractal + Drupal | Fractal</title>
 
 </head>
 <body>
@@ -52,7 +52,7 @@
 
     <div class="Document-header">
         
-        <h1 class="Document-title">Fractal</h1>
+        <h1 class="Document-title">Fractal + Drupal</h1>
         
 
 
@@ -69,7 +69,13 @@
 
     
     
-    <p>This is your index page. You can edit its contents at <code>docs/01-index.twig</code></p>
+    <ul>
+<li><strong>Twig Namespace</strong>: Twig Namespace support via <a href="https://github.com/wearewondrous/fractal-twig-drupal-adapter">Fractal Twig Drupal Adapter</a> is required. See the “Notes” tab on the Card component. Without this, including any component that nests another component will cause a fatal PHP error.</li>
+<li><strong>Formatted Markup</strong>: Need to account for formatted markup that comes from a WYSIWYG. Many fields will be WYSWYG-enabled. This needs to be accounted for in any pattern that can accept 1-2+ sentences of text.  These fields are generally always set up with a basic WYSIWYG interface, which can be limited, as far as allowed HTML tags, but isn’t always.</li>
+<li><strong>Link Attributes</strong>: Need to account for rendering links with an attributes object. Critical attributes are passed through from Drupal’s backend that affect multilingual sites.</li>
+<li><strong>Container Attributes</strong>: Need the ability to merge attributes on the top-level component wrappers. Without this, QuickEdit must be disabled, and various other functionality will break, e.g. Views AJAX support.</li>
+<li><strong>Images</strong>: Drupal has fantastic support for Responsive Images. Running an image uri through a component just for a sake of doing so, would prevent the ability to use them.</li>
+</ul>
 
     
 

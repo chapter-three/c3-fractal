@@ -1,11 +1,15 @@
 .blockquote {
-  font-family: serif;
-  background: #ddd;
-  border: solid 1px #ccc;
-  padding: 1rem;
+  border: solid 1px var(--color-gray-lightest, #ededed);
+  color: var(--color-gray);
+  padding: 2rem;
+  margin: 1rem;
+  text-align: center;
+}
+
+.blockquote__quote {
+  font-size: 2rem;
 }
 
 .blockquote__attribution {
-  font-family: sans-serif;
   margin-top: 1rem;
 }
