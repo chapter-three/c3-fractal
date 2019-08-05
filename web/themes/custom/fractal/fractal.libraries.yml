@@ -2,3 +2,4 @@ base:
   css:
     theme:
       css/style.css: {}
+      css/tabs.css: {}
