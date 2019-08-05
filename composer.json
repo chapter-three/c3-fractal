@@ -27,6 +27,7 @@
         "drupal/multiple_definition_files": "^1.0",
         "drupal/paragraphs": "^1.8",
         "drupal/pathauto": "^1.4",
+        "drupal/stage_file_proxy": "^1.0@beta",
         "drupal/twig_xdebug": "^1.1",
         "drupal/ui_patterns": "^1.1",
         "drush-ops/behat-drush-endpoint": "^9.3",
