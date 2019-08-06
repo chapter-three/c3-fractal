@@ -1,7 +1,7 @@
 <div class="card {{ 'card--align-' ~ align|default('left') }}">
   <div class="card__img">
     {% if img %}
-      <img src="{{ img }}" alt="" class="card__img"/>
+      <img src="{{- img -}}" alt="" class="card__img"/>
     {% endif %}
   </div>
   <div class="card__contents">
