@@ -4,10 +4,6 @@ context:
   url: "#"
   body: "I'm a body - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
   img: https://placeimg.com/640/480/any
-  buttons:
-    -
-      text: 'Button one'
-      url: '#'
-    -
-      text: 'Button two'
-      url: '#'
+  button:
+    text: 'Card button'
+    url: '#'

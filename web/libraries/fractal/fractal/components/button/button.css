@@ -1,6 +1,6 @@
 .button {
-  background-color: #2196f3;
-  border: solid 1px #2196f3;
+  background-color: var(--color-blue);
+  border: solid 1px var(--color-blue);
   color: #fff;
   display: inline-block;
   line-height: 1.1;
