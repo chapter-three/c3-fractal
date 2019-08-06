@@ -25,7 +25,7 @@ fractal.components.set('ext', '.twig');
 /*
  * Give your project a title.
  */
-fractal.set('project.title', 'Fractal');
+fractal.set('project.title', 'C3 Fractal');
 
 /*
  * Tell Fractal where to look for components.
