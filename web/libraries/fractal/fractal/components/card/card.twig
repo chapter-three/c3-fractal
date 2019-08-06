@@ -5,7 +5,15 @@
     {% endif %}
   </div>
   <div class="card__contents">
-    <h3 class="card__title">{{ title }}</h3>
+    {% if title %}
+      <h2 class="card__title">
+        {% if url %}
+          <a href="{{ url }}">{{ title }}</a>
+        {% else %}
+          {{ title }}
+        {% endif %}
+      </h2>
+    {% endif %}
     <p class="card__body">{{ body }}</p>
     {% if buttons %}
       {% for button in buttons %}
