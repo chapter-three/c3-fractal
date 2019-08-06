@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link href="/css/global.css" rel="stylesheet">
     {% for asset in _target.resources.assets %}
       {% if asset.isCSS %}
         <link href="../raw/{{ _target.baseHandle }}/{{ asset.base }}" rel="stylesheet">
