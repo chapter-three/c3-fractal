@@ -15,10 +15,10 @@
       </h2>
     {% endif %}
     <p class="card__body">{{ body }}</p>
-    {% if button %}
+    {% if button_text and button_url %}
       {% include '@fractal/button/button.twig' with {
-        text: button.text,
-        url: button.url
+        text: button_text,
+        url: button_url
       } %}
     {% endif %}
   </div>

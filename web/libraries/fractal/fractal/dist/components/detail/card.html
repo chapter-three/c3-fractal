@@ -191,10 +191,10 @@
       <span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
     </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">endif</span></span> %}</span><span class="xml">
     <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__body"</span>&gt;</span></span><span class="hljs-template-variable">{{ body }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-    </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">if</span></span> button %}</span><span class="xml">
+    </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">if</span></span> button_text and button_url %}</span><span class="xml">
       </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">include</span></span> '@fractal/button/button.twig' with {
-        text: button.text,
-        url: button.url
+        text: button_text,
+        url: button_url
       } %}</span><span class="xml">
     </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">endif</span></span> %}</span><span class="xml">
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -212,10 +212,8 @@
   <span class="hljs-attr">"url"</span>: <span class="hljs-string">"#"</span>,
   <span class="hljs-attr">"body"</span>: <span class="hljs-string">"I'm a body - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</span>,
   <span class="hljs-attr">"img"</span>: <span class="hljs-string">"https://placeimg.com/640/480/any"</span>,
-  <span class="hljs-attr">"button"</span>: {
-    <span class="hljs-attr">"text"</span>: <span class="hljs-string">"Card button"</span>,
-    <span class="hljs-attr">"url"</span>: <span class="hljs-string">"#"</span>
-  }
+  <span class="hljs-attr">"button_text"</span>: <span class="hljs-string">"Card button"</span>,
+  <span class="hljs-attr">"button_url"</span>: <span class="hljs-string">"#"</span>
 }</pre>
             
         
