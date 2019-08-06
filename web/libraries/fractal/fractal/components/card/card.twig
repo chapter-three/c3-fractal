@@ -9,7 +9,10 @@
     <p class="card__body">{{ body }}</p>
     {% if buttons %}
       {% for button in buttons %}
-        {% include '@fractal/button/button.twig' with { button: button } %}
+        {% include '@fractal/button/button.twig' with {
+          text: button.text,
+          url: button.url
+        } %}
       {% endfor %}
     {% endif %}
   </div>

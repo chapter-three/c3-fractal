@@ -3,7 +3,7 @@ This component requires a nested button component. Fractal, and most other libra
 ```twig
 {% if buttons %}
   {% for button in buttons %}
-    {% include '@button' with { button: button } %}
+    {% include '@button' with { url: button.url, text: button.text } %}
   {% endfor %}
 {% endif %}
 ```
@@ -13,7 +13,7 @@ Drupal will not be able to use this. Twig namespace support is critical for this
 ```twig
 {% if buttons %}
   {% for button in buttons %}
-    {% include "@fractal/button/button.twig" with { button: button } %}
+    {% include "@fractal/button/button.twig" with { url: button.url, text: button.text } %}
   {% endfor %}
 {% endif %}
 ```
