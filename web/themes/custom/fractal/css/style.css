@@ -117,6 +117,7 @@ body[style="padding-top: 79px;"] .page {
 
 ul.menu {
   display: flex;
+  flex-flow: row wrap;
   padding: 0;
   margin: 0;
 }
