@@ -24,4 +24,4 @@ blockquote:
     - blockquote:
        css:
          component:
-           ../../../libraries/fractal/fractal/components/blockquote/blockquote.css: {}
+           ../../../libraries/fractal/components/blockquote/blockquote.css: {}

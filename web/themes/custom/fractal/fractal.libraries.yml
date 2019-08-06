@@ -1,7 +1,7 @@
 base:
   css:
     theme:
-      ../../../libraries/fractal/fractal/public/css/global.css: {}
+      ../../../libraries/fractal/public/css/global.css: {}
       css/style.css: {}
       css/tabs.css: {}
       css/patterns.css: {}
