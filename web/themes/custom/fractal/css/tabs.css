@@ -97,7 +97,7 @@ nav.tabs {
 
 /* JS dependent styling */
 .is-collapse-enabled .tabs__trigger {
-  background-color: var(--color-blue);
+  background-color: var(--color-primary-accent-dark);
   border: 0;
   color: #fff;
   display: block;
@@ -151,7 +151,7 @@ nav.tabs {
 
 .tabs--primary a.is-active {
   background-color: #fff;
-  border-bottom-color: var(--color-blue);
+  border-bottom-color: var(--color-primary-accent-dark);
 }
 
 .is-collapse-enabled .tabs--primary a {
@@ -165,7 +165,7 @@ nav.tabs {
 .is-horizontal .tabs--primary a.is-active:after {
   content: '';
   height: 4px;
-  background: var(--color-blue);
+  background: var(--color-primary-accent-dark);
   position: absolute;
   left: 0;
   right: 0;

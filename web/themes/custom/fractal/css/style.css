@@ -1,6 +1,3 @@
-
-
-
 /*
  * Sticky footer
  * -----------------------------------------------------------------------------
@@ -83,8 +80,8 @@ body[style="padding-top: 79px;"] .page {
  */
 
 .page__footer {
-  background: #444;
-  color: #fff;
+  background: var(--color-secondary-accent-dark);
+  color: var(--color-secondary-accent-light);
   font-size: 0.875rem;
   padding: 1rem;
 }
@@ -153,9 +150,9 @@ ul.menu a.is-active {
 }
 .page__navbar ul.menu a.is-active,
 .page__navbar ul.menu a.is-active:hover {
-  background: var(--color-blue);
+  background: var(--color-primary-accent-dark);
   border-radius: 1em;
-  color: #fff;
+  color: var(--color-primary-accent-light);
 }
 
 
@@ -165,8 +162,8 @@ ul.menu a.is-active {
  */
 
 .page-title {
-  background-color: var(--color-blue);
-  color: #fff;
+  background-color: var(--color-primary-accent-dark);
+  color: var(--color-primary-accent-light);
   font-weight: 300;
   margin: 0;
   padding: 1rem;

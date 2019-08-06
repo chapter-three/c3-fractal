@@ -1,9 +1,15 @@
 :root {
-  --color-blue: #3f51b5;
-  --color-blue-light: #5c6bc0;
-  --color-gray: #58585;
+  --color-pink: #14f;
+  --color-pink: #c23582;
+  --color-gray: #585858;
+  --color-gray-dark: #444;
+  --color-gray-darkest: #212121;
   --color-gray-light: #ccc;
   --color-gray-lightest: #ededed;
+  --color-primary-accent-dark: var(--color-pink);
+  --color-primary-accent-light: #fff;
+  --color-secondary-accent-dark: var(--color-gray-dark);
+  --color-secondary-accent-light: #fff;
 }
 /*
  * Global
@@ -31,13 +37,13 @@ img {
 }
 
 a {
-  color: var(--color-blue-light);
+  color: var(--color-primary-accent-dark);
 }
 
 h2 a,
 h3 a,
 h4 a {
-  color: var(--color-blue);
+  color: var(--color-pink);
   text-decoration: none;
 }
 
