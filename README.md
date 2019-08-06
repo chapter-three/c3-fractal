@@ -13,12 +13,12 @@ _* The Github repo is a mirror (meant for easily browsing the codebase). It's on
 | Site | https://dev-c3-fractal.pantheonsite.io |
 | Codebase | `ssh://codeserver.dev.75e1a05e-d1ea-4c7f-95c5-34159376d7dd@codeserver.dev.75e1a05e-d1ea-4c7f-95c5-34159376d7dd.drush.in:2222/~/repository.git` |
 | Github* | https://github.com/chapter-three/c3-fractal |
-| <nobr>Fractal Pattern Library<nobr> | https://dev-c3-fractal.pantheonsite.io/libraries/fractal/fractal/build/index.html |
+| <nobr>Fractal Pattern Library<nobr> | https://dev-c3-fractal.pantheonsite.io/libraries/fractal/dist/index.html |
 | Fractal UI Patterns Listing | https://dev-c3-fractal.pantheonsite.io/patterns
 
 ### Notes
 
-- The Fractal library is located in `web/libraries/fractal/fractal`. There are currently 3 patterns:
+- The Fractal library is located in `web/libraries/fractal`. There are currently 3 patterns:
   - Blockquote
   - Button
   - Card
@@ -31,13 +31,14 @@ _* The Github repo is a mirror (meant for easily browsing the codebase). It's on
       - Button link paragraph (default display)
   2. https://dev-c3-fractal.pantheonsite.io/faq: This is a View, configured to use the UI Patterns row display, along with Views fields that are mapped to the Card pattern.
   3. https://dev-c3-fractal.pantheonsite.io/blog: This is a View, configured to render "teaser" entity display for article content type. The "Teaser" view mode is configured to use the "Card" pattern.
+- There is a custom module `fieldz_formatters` that currently adds some extra fields to handle the 1:1 mapping that UI Patterns needs on entity displays.
 
 ## Local Setup
 
 1. Install dependencies:
 
 ```sh
-cd web/libraries/fractal/fractal
+cd web/libraries/fractal
 npm install
 ```
 
