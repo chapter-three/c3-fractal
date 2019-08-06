@@ -2212,19 +2212,19 @@
         }
     },
     {
-        "name": "drupal/field_group",
+        "name": "drupal/extra_field",
         "version": "1.0.0",
         "version_normalized": "1.0.0.0",
         "source": {
             "type": "git",
-            "url": "https://git.drupalcode.org/project/field_group.git",
+            "url": "https://git.drupalcode.org/project/extra_field.git",
             "reference": "8.x-1.0"
         },
         "dist": {
             "type": "zip",
-            "url": "https://ftp.drupal.org/files/projects/field_group-8.x-1.0.zip",
+            "url": "https://ftp.drupal.org/files/projects/extra_field-8.x-1.0.zip",
             "reference": "8.x-1.0",
-            "shasum": "e8aa3fae5c3c5dec84644bb577996938d638a611"
+            "shasum": "97cc8086063f9ce6721102b9968eba0e243b4d78"
         },
         "require": {
             "drupal/core": "*"
@@ -2236,10 +2236,59 @@
             },
             "drupal": {
                 "version": "8.x-1.0",
-                "datestamp": "1510352885",
+                "datestamp": "1514722384",
                 "security-coverage": {
                     "status": "covered",
                     "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "Sutharsan",
+                "homepage": "https://www.drupal.org/user/73854"
+            }
+        ],
+        "description": "Provides a plugin type for extra fields that look like real fields, but do not store data.",
+        "homepage": "https://www.drupal.org/project/extra_field",
+        "support": {
+            "source": "https://git.drupalcode.org/project/extra_field"
+        }
+    },
+    {
+        "name": "drupal/field_group",
+        "version": "3.0.0-rc1",
+        "version_normalized": "3.0.0.0-RC1",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/field_group.git",
+            "reference": "8.x-3.0-rc1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/field_group-8.x-3.0-rc1.zip",
+            "reference": "8.x-3.0-rc1",
+            "shasum": "e291b5468c834a344e9aa6cafd3a76171d473a22"
+        },
+        "require": {
+            "drupal/core": "*"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-3.x": "3.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-3.0-rc1",
+                "datestamp": "1558647185",
+                "security-coverage": {
+                    "status": "not-covered",
+                    "message": "RC releases are not covered by Drupal security advisories."
                 }
             }
         },
@@ -2278,18 +2327,18 @@
     },
     {
         "name": "drupal/fontawesome",
-        "version": "2.13.0",
-        "version_normalized": "2.13.0.0",
+        "version": "2.14.0",
+        "version_normalized": "2.14.0.0",
         "source": {
             "type": "git",
             "url": "https://git.drupalcode.org/project/fontawesome.git",
-            "reference": "8.x-2.13"
+            "reference": "8.x-2.14"
         },
         "dist": {
             "type": "zip",
-            "url": "https://ftp.drupal.org/files/projects/fontawesome-8.x-2.13.zip",
-            "reference": "8.x-2.13",
-            "shasum": "3bf8bc202f429b6ad35777ae9229b8c1f1bad085"
+            "url": "https://ftp.drupal.org/files/projects/fontawesome-8.x-2.14.zip",
+            "reference": "8.x-2.14",
+            "shasum": "5bba6b1cba7450256defc36a0cbfdd70744bde1d"
         },
         "require": {
             "drupal/core": "~8.0"
@@ -2300,8 +2349,8 @@
                 "dev-2.x": "2.x-dev"
             },
             "drupal": {
-                "version": "8.x-2.13",
-                "datestamp": "1557577985",
+                "version": "8.x-2.14",
+                "datestamp": "1564762385",
                 "security-coverage": {
                     "status": "covered",
                     "message": "Covered by Drupal's security advisory policy"
