@@ -43,12 +43,13 @@ content:
       pager_id: 0
     third_party_settings: {  }
   field_image:
-    type: entity_reference_label
+    type: entity_reference_entity_view
     weight: 0
     region: content
     label: hidden
     settings:
-      link: true
+      view_mode: full
+      link: false
     third_party_settings: {  }
   field_tags:
     type: entity_reference_label
@@ -59,4 +60,9 @@ content:
       link: true
     third_party_settings: {  }
 hidden:
+  extra_field_entity_title: true
+  extra_field_entity_url: true
+  extra_field_field_image_media_reference_url: true
+  extra_field_field_link_text: true
+  extra_field_field_link_url: true
   links: true

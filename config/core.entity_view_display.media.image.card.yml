@@ -33,6 +33,9 @@ content:
     region: content
 hidden:
   created: true
+  extra_field_entity_title: true
+  extra_field_field_link_text: true
+  extra_field_field_link_url: true
   name: true
   thumbnail: true
   uid: true

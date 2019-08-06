@@ -10,7 +10,6 @@ dependencies:
     - paragraphs.paragraphs_type.card
   module:
     - field_layout
-    - link
     - text
   theme:
     - fractal
@@ -28,26 +27,20 @@ targetEntityType: paragraph
 bundle: card
 mode: default
 content:
-  field_image:
+  extra_field_field_image_media_reference_url:
     weight: 2
-    label: hidden
-    settings:
-      view_mode: card
-      link: false
-    third_party_settings: {  }
-    type: entity_reference_entity_view
     region: img
-  field_link:
-    type: link
+    settings: {  }
+    third_party_settings: {  }
+  extra_field_field_link_text:
     weight: 3
-    region: buttons
-    label: hidden
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
+    region: button_text
+    settings: {  }
+    third_party_settings: {  }
+  extra_field_field_link_url:
+    weight: 4
+    region: button_url
+    settings: {  }
     third_party_settings: {  }
   field_text:
     type: text_default
@@ -64,4 +57,6 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_image: true
+  field_link: true
