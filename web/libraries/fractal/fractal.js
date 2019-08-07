@@ -42,3 +42,16 @@ fractal.docs.set('path', path.join(__dirname, 'docs'));
  */
 fractal.web.set('static.path', path.join(__dirname, 'public'));
 fractal.web.set('builder.dest', path.join(__dirname, 'dist'));
+
+
+/*
+ * Customize the Styleguide theme
+ */
+const mandelbrot = require('@frctl/mandelbrot');
+
+// Create a new instance with custom config options
+const c3Fractal = mandelbrot({
+  skin: 'black'
+});
+
+fractal.web.theme(c3Fractal);
