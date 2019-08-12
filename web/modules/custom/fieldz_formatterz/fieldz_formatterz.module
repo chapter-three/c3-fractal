@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Module file for fieldz_formatter module.
+ */
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function fieldz_formatterz_preprocess_pattern_buttons(&$variables) {
+  // Move the extra field element to top level.
+  if (!empty($variables['buttons']['extra_field_button_group_paragraph_field_data'])) {
+    $variables['buttons'] = $variables['buttons']['extra_field_button_group_paragraph_field_data'];
+    $variables['#attached']['library'][] = 'ui_patterns/button.button';
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function fieldz_formatterz_preprocess_layout(&$variables) {
+
+}
