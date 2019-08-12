@@ -4,8 +4,8 @@ context:
   url: '#'
   style: primary
 variants:
-- name: default
-  label: Primary
-- name: secondary
-  context:
-    style: secondary
+  - name: default
+    label: Primary
+  - name: secondary
+    context:
+      style: secondary
