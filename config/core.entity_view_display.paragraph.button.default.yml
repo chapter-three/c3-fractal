@@ -8,7 +8,7 @@ dependencies:
     - paragraphs.paragraphs_type.button
   module:
     - field_layout
-    - link
+    - options
   theme:
     - fractal
 third_party_settings:
@@ -17,7 +17,7 @@ third_party_settings:
     settings:
       pattern:
         field_templates: only_content
-        variant: ''
+        variant: default
 _core:
   default_config_hash: vpUA4ymMBTOaFuC5rB__jV6ruJR4B6wXVDpDSLj_Woo
 id: paragraph.button.default
@@ -25,17 +25,23 @@ targetEntityType: paragraph
 bundle: button
 mode: default
 content:
-  field_link:
+  extra_field_field_link_text:
     weight: 0
-    label: hidden
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
+    region: text
+    settings: {  }
     third_party_settings: {  }
-    type: link_separate
-    region: button
+  extra_field_field_link_url:
+    weight: 1
+    region: url
+    settings: {  }
+    third_party_settings: {  }
+  field_button_style:
+    type: list_key
+    weight: 2
+    region: style
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
 hidden:
-  field_button_style: true
+  extra_field_field_image_media_reference_url: true
+  field_link: true
