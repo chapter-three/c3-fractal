@@ -171,7 +171,7 @@
     <code class="Code Code--lang-twig">
         <pre><span class="xml"></span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">if</span></span> buttons|<span class="hljs-keyword">length</span> %}</span><span class="xml">
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"buttons buttons--</span></span></span><span class="hljs-template-variable">{{ align|<span class="hljs-keyword">default</span>('left') }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span>
-  </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">for</span></span> button in buttons %}</span><span class="xml">
+    </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">for</span></span> button in buttons %}</span><span class="xml">
       </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">include</span></span> '@fractal/button/button.twig' with {
         text: button.text,
         url: button.url,
@@ -219,13 +219,64 @@
             <label class="FileBrowser-select-label" for="filebrowser-select">File:</label>
             <select class="FileBrowser-select" id="filebrowser-select">
                 
+                <option value="file-0b8e041bfb6639f79dc57927799c2122">button.css</option>
+                
                 <option value="file-f7a2387b478f1811af53e885cb058a21">buttons.css</option>
                 
             </select>
         </div>
 
         
-        <div class="FileBrowser-item is-active" id="file-f7a2387b478f1811af53e885cb058a21" data-role="resource-preview">
+        <div class="FileBrowser-item is-active" id="file-0b8e041bfb6639f79dc57927799c2122" data-role="resource-preview">
+            <ul class="Meta">
+                <li class="Meta-item">
+                    <strong class="Meta-key">Content:</strong>
+                    <span class="Meta-value">
+                        <div class="FileBrowser-itemPreview">
+                            
+                            <code class="Code Code--lang-CSS FileBrowser-code">
+                                <pre><span class="hljs-selector-class">.button</span> {
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--color-primary-accent-dark);
+  <span class="hljs-attribute">border</span>: solid <span class="hljs-number">1px</span> <span class="hljs-built_in">var</span>(--color-primary-accent-dark);
+  <span class="hljs-attribute">color</span>: <span class="hljs-built_in">var</span>(--color-primary-accent-light);
+  <span class="hljs-attribute">display</span>: inline-block;
+  <span class="hljs-attribute">line-height</span>: <span class="hljs-number">1.1</span>;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0.5rem</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">0.4rem</span> <span class="hljs-number">1.2rem</span>;
+  <span class="hljs-attribute">text-decoration</span>: none;
+}
+
+<span class="hljs-selector-class">.button</span> + <span class="hljs-selector-class">.button</span> {
+  <span class="hljs-attribute">margin-left</span>: <span class="hljs-number">1rem</span>;
+}
+
+<span class="hljs-selector-class">.button--secondary</span> {
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#000</span>;
+  <span class="hljs-attribute">border-color</span>: <span class="hljs-number">#000</span>;
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span>;
+}
+</pre>
+                            </code>
+                            
+                        </div>
+                    </span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">URL:</strong>
+                    <span class="Meta-value"><a data-no-pjax href="../raw/buttons/button.css"><span>/components/raw/buttons/button.css</span></a></span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Filesystem Path:</strong>
+                    <span class="Meta-value">button.css</span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Size:</strong>
+                    <span class="Meta-value">415 Bytes</span>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="FileBrowser-item" id="file-f7a2387b478f1811af53e885cb058a21" data-role="resource-preview">
             <ul class="Meta">
                 <li class="Meta-item">
                     <strong class="Meta-key">Content:</strong>
@@ -270,7 +321,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Filesystem Path:</strong>
-                    <span class="Meta-value">components/buttons/buttons.css</span>
+                    <span class="Meta-value">buttons.css</span>
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
@@ -342,7 +393,7 @@
         </li>
         <li class="Meta-item">
             <strong class="Meta-key">Filesystem Path:</strong>
-            <span class="Meta-value">components/buttons/buttons.twig</span>
+            <span class="Meta-value">buttons.twig</span>
         </li>
         
         
