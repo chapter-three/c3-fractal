@@ -1,0 +1,27 @@
+title: Buttons
+context:
+  align: left
+  buttons:
+    -
+      text: 'First button'
+      url: '#'
+      style: primary
+    -
+      text: 'Second button'
+      url: '#'
+      style: secondary
+variants:
+  - name: default
+    label: Left
+  - name: Center
+    context:
+      align: center
+  - name: Right
+    context:
+      align: right
+  - name: Around
+    context:
+      align: around
+  - name: Between
+    context:
+      align: between
