@@ -1,6 +1,6 @@
 {% if buttons|length %}
   <div class="buttons buttons--{{ align|default('left') }}">
-  {% for button in buttons %}
+    {% for button in buttons %}
       {% include '@fractal/button/button.twig' with {
         text: button.text,
         url: button.url,
