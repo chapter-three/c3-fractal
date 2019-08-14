@@ -1,0 +1,11 @@
+{% with { foo: 42 } %}
+{{ foo }}
+{# foo is 42 here #}
+{% endwith %}
+foo is not visible here any longer
+
+{# it works with any expression that resolves to a hash #}
+{% set vars = { foo: 42 } %}
+{% with vars %}
+...
+{% endwith %}

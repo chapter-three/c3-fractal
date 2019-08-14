@@ -1,0 +1,8 @@
+{% block hey %}
+  {% deprecated 'The "hey" block is deprecated, use "greet" instead.' %}
+  {{ block('greet') }}
+{% endblock %}
+
+{% block greet %}
+  Hey you!
+{% endblock %}

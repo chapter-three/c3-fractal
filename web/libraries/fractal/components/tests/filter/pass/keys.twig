@@ -1,0 +1,8 @@
+{% set array = {
+  title: 'Home',
+  subtitle: 'Welcome to Fractal with Twig',
+  path: 'home'
+} %}
+{% for key in array|keys %}
+  {{ key }} <br>
+{% endfor %}

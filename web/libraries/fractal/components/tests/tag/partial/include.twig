@@ -1,0 +1,25 @@
+
+{% include '@fractal/tests/tags/pass/block.twig' with { test: 'heyyyyy' } %}
+
+{# Store a rendered template in a variable #}
+{% set content %}
+  {% include '@fractal/tests/tags/pass/block.twig' %}
+{% endset %}
+
+{# vs #}
+{# {% set content = include('@fractal/tests/tags/pass/block.twig') %} #}
+
+
+{# Filter a rendered template #}
+{# {% filter upper %}
+  {% include '@fractal/tests/tags/pass/block.twig' %}
+{% endfilter %} #}
+
+{# vs #}
+{# {{ include('@fractal/tests/tags/pass/block.twig')|upper }} #}
+
+
+{#
+- Functions failed.
+- Filter tags failed.
+#}

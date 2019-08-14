@@ -1,0 +1,9 @@
+{{ test|default('Content outside a block') }}
+
+{% block block_title %}
+  <h2>{{ title|default('Default title') }}</h2>
+{% endblock %}
+
+{% block block_content %}
+ <p>{{ content|default('Default content') }}</p>
+{% endblock %}

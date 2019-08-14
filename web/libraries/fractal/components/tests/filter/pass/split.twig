@@ -1,0 +1,4 @@
+{% set foo = "one,two,three"|split(',') %}
+{# foo contains ['one', 'two', 'three'] #}
+
+{{ foo|join('|') }}

@@ -1,0 +1,7 @@
+{% set numbers = [1, 2, 3] %}
+
+{{ numbers|reduce((carry, v) => carry + v) }} <br>
+{# output 6 #}
+
+{{ numbers|reduce((carry, v) => carry + v, 10) }}
+{# output 16 #}

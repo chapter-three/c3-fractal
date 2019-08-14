@@ -1,0 +1,17 @@
+{# {% macro input(name, value, type = "text", size = 20) %}
+  <input type="{{ type }}" name="{{ name }}" value="{{ value|e }}" size="{{ size }}"/>
+{% endmacro %} #}
+
+{% macro input(name, value, type, size) %}
+  <input type="{{ type }}" name="{{ name }}" value="{{ value|e }}" size="{{ size }}"/>
+{% endmacro %}
+
+{% macro textarea(name, value, rows, cols) %}
+  <textarea name="{{ name }}" rows="{{ rows }}" cols="{{ cols }}">{{ value|e }}</textarea>
+{% endmacro %}
+
+{#
+  - Basic macros seem supported.
+  - Fractal server needs to be restarted.
+  - No assignments to the function arguments, or it will barf.
+#}

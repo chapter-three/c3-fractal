@@ -1,0 +1,9 @@
+{# € #}
+{{ 'EUR'|currency_symbol }}
+
+{# ¥ #}
+{{ 'JPY'|currency_symbol }}
+
+By default, the filter uses the current locale. You can pass it explicitly:
+{# ¥ #}
+{{ 'JPY'|currency_symbol('fr') }}

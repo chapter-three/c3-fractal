@@ -1,0 +1,9 @@
+PASS: {{ "now"|date_modify("+1 day")|date("m/d/Y") }}<br>
+
+
+FAIL: {{ "now"|date_modify("+1 day")|date("F jS \\a\\t g:ia") }}<br>
+
+
+FAIL: {{ "now"|date_modify("+1 day")|date("m/d/Y g:ia", "Europe/Paris") }}
+
+

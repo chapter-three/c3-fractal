@@ -1,0 +1,12 @@
+The language_name filter returns the language name given its two-letter code: <br>
+
+{# German #}
+{{ 'de'|language_name }} <br>
+
+By default, the filter uses the current locale. You can pass it explicitly: <br>
+
+{# allemand #}
+{{ 'de'|language_name('fr') }} <br>
+
+{# français canadien #}
+{{ 'fr_CA'|language_name('fr_FR') }} <br>

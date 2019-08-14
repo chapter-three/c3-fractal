@@ -1,0 +1,11 @@
+{% set users = [
+  'Jacine',
+  'Zakiya',
+  'Calvin',
+  'Brian',
+  'Stephanie'
+] %}
+
+{% for user in users|sort %}
+  {{ user }} <br>
+{% endfor %}

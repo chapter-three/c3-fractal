@@ -1,0 +1,15 @@
+{{ '  I like Twig.  '|trim }} <br>
+
+{# outputs 'I like Twig.' #}
+
+{{ '  I like Twig.'|trim('.') }} <br>
+
+{# outputs '  I like Twig' #}
+
+{# {{ '  I like Twig.  '|trim(side='left') }} <br> #}
+
+{# outputs 'I like Twig.  ' #}
+
+{# {{ '  I like Twig.  '|trim(' ', 'right') }} <br> #}
+
+{# outputs '  I like Twig.' #}

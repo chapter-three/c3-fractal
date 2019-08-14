@@ -1,0 +1,8 @@
+{{ '12.345'|format_number }} <br>
+You can pass attributes to tweak the output: <br>
+
+{# 12.34 #}
+{{ '12.345'|format_number({rounding_mode: 'floor'}) }} <br>
+
+{# 1000000.0000 #}
+{{ '1000000'|format_number({fraction_digit: 4}) }}

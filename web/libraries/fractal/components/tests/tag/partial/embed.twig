@@ -1,0 +1,15 @@
+
+{% embed '@fractal/tests/tags/pass/block.twig' with { test: 'heyyyyy' } %}
+
+  {% block block_content %}
+    {{ 'Helloooooo' }}
+  {% endblock block_content %}
+
+  {% block extra %}
+    <h1>yo, hey</h1>
+  {% endblock extra %}
+
+{% endembed  %}
+
+{# block block_title does not print #}
+{# Extra does not render #}

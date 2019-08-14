@@ -1,0 +1,8 @@
+{{ "path-seg*ment"|url_encode }} <br>
+{# outputs "path-seg%2Ament" #}
+
+{{ "string with spaces"|url_encode }} <br>
+{# outputs "string%20with%20spaces" #}
+
+{{ {'param': 'value', 'foo': 'bar'}|url_encode }}
+{# outputs "param=value&foo=bar" #}

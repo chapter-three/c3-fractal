@@ -1,0 +1,19 @@
+
+The number_format filter formats numbers. It is a wrapper around PHP's number_format function: <br>
+
+200.35: {{ 200.35|number_format }} <br>
+You can control the number of decimal places, decimal point, and thousands separator using the additional arguments: <br>
+
+9800.333: {{ 9800.333|number_format(2, '.', ',') }}
+<br>
+
+To format negative numbers, wrap the number with parentheses (needed because of Twig's precedence of operators: <br>
+
+-9800.333: {{ -9800.333|number_format(2, '.', ',') }}
+{# outputs : -9 #}
+<br>
+
+-9800.333: {{ (-9800.333)|number_format(2, '.', ',') }}
+{# outputs : -9,800.33 #}
+<br>
+

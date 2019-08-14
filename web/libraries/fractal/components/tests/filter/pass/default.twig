@@ -1,0 +1,7 @@
+{{ var|default('var is not defined') }} <br>
+
+{{ var.foo|default('foo item on var is not defined') }} <br>
+
+{{ var['foo']|default('foo item on var is not defined') }} <br>
+
+{{ ''|default('passed var is empty')  }}

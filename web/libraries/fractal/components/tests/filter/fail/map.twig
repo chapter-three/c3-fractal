@@ -1,0 +1,13 @@
+{% set people = [
+  {
+    first: 'Bob',
+    last: 'Smith'
+  },
+  {
+    first: 'Alice',
+    last: 'Dupond'
+  },
+] %}
+
+{{ people|map(p => '#{p.first} #{p.last}')|join(', ') }}
+{# outputs Bob Smith, Alice Dupond #}

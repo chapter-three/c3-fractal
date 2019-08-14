@@ -1,0 +1,17 @@
+
+{% set foo = 'foo' %}
+{% set foo = foo|merge({'bar': 'bat'}) %}
+
+{# defined works with variable names #}
+{% if foo is defined %}
+  <code>foo</code> is defined. <br>
+{% endif %}
+
+{# and attributes on variables names #}
+{% if foo.bar is defined %}
+  <code>foo.bar</code> is defined. <br>
+{% endif %}
+
+{% if foo['bar'] is defined %}
+  <code>foo['bar']</code> is defined. <br>
+{% endif %}

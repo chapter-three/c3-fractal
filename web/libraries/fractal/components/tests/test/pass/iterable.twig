@@ -1,0 +1,16 @@
+{% set arr = [1, 2, 3, 4] %}
+{% set obj = { a: 1, b: 2, c: 3, d: 4 } %}
+
+{% if arr is iterable %}
+    <code>arr</code> is iterable.
+{% else %}
+    <code>arr</code> is not iterable.
+{% endif %}
+
+<br>
+
+{% if obj is iterable %}
+    <code>obj</code> is iterable.
+{% else %}
+    <code>obj</code> is not iterable.
+{% endif %}

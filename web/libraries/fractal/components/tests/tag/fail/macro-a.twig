@@ -1,0 +1,21 @@
+{% macro input(name, value, type, size) %}
+  <input type="{{ type|default('text') }}" name="{{ name }}" value="{{ value|e }}" size="{{ size|default(20) }}"/>
+{% endmacro %}
+
+{% macro wrapped_input(name, value, type, size) %}
+  {% import _self as forms %}
+    {{ forms.input(name, value, type, size) }}
+  </div>
+{% endmacro %}
+
+
+<p>{{ _self.input('password', '', 'password') }}</p>
+
+{% macro input(name, value, type = "text", size = 20) %}
+  <input type="{{ type }}" name="{{ name }}" value="{{ value|e }}" size="{{ size }}"/>
+{% endmacro %}
+
+
+{#
+ Most of this fails...  Twig.js cannot deal with arugments.
+#}
