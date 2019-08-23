@@ -1,0 +1,26 @@
+{% set box_attribute = create_attribute() %}
+{%
+  set box_classes = [
+    'box',
+    shadow ? 'box--shadow' : null,
+    border ? 'box--border' : null,
+    rounded ? 'box--rounded' : null,
+    imagebg ? 'imagebg' : null,
+  ]
+%}
+
+<div{{ box_attribute.addClass(box_classes) }} {% if imagebg %} style="background-image: url('{{- imagebg -}}');" {% endif %}>
+    {% if title %}
+      <h5 class="box__title">{{ title }} </h5>
+    {% endif %}
+	<p>
+		{{ body }}
+	</p>
+  {% if button.text and button.url %}
+    {% include '@fractal/button/button.twig' with {
+      text: button.text,
+      url: button.url
+    } %}
+  {% endif %}
+
+</div>

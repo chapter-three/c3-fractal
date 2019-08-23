@@ -1,0 +1,13 @@
+title: Box
+context:
+  title: "I'm a Box Title"
+  body: "I'm a body - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  shadow: true
+  border: true
+  rounded: true
+  size: null
+  bg: 'secondary'
+  imagebg: https://picsum.photos/640/360
+  button:
+    text: 'Card button'
+    url: '#'
