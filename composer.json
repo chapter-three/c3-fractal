@@ -33,6 +33,7 @@
         "drupal/twig_xdebug": "^1.1",
         "drupal/ui_patterns": "^1.1",
         "drupal/ui_patterns_field_variants": "1.x-dev",
+        "drupal/webhooks": "^1.0@alpha",
         "drush-ops/behat-drush-endpoint": "^9.3",
         "pantheon-systems/quicksilver-pushback": "~1",
         "rvtraveller/qs-composer-installer": "^1.1",
