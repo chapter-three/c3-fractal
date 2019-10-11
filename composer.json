@@ -25,6 +25,7 @@
         "drupal/extra_field": "^1.0",
         "drupal/field_group": "~3.0.0",
         "drupal/fontawesome": "^2.13",
+        "drupal/jsonapi_extras": "^3.12",
         "drupal/markup": "^1.0@beta",
         "drupal/multiple_definition_files": "^1.0",
         "drupal/paragraphs": "^1.8",
