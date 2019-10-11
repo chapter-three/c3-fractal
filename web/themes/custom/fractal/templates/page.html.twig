@@ -28,7 +28,7 @@
     <header class="page__header">
       {# If field_header has a value, it should replace the title block.#}
       {% if node.field_header.value %}
-        {{ page.header|without('patternlab_title') }}
+        {{ page.header|without('fractal_title') }}
       {% else %}
         {{ page.header }}
       {% endif %}
