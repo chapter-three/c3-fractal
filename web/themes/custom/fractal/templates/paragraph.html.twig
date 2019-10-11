@@ -1,0 +1,20 @@
+{#
+/**
+  * @file
+ * Template for a paragraph.
+ */
+#}
+{% set classes = [
+  'paragraph',
+  not paragraph.isPublished() ? 'paragraph--unpublished',
+  paragraph.bundle|clean_class,
+  paragraph.bundle|clean_class ~ '--' ~ view_mode|clean_class,
+]|merge(classes|default([])) %}
+
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+    {% block content %}
+      {{ content }}
+    {% endblock %}
+  </div>
+{% endblock paragraph %}

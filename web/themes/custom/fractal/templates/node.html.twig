@@ -1,10 +1,9 @@
 {#
 /**
  * @file
- * Template for a node in full display mode.
+ * Template for a node.
  */
 #}
-
 
 {% set classes = [
   'node',
@@ -20,21 +19,9 @@
   {{ title_suffix }}
 
   {% block content %}
-
-      {% if content.field_header|render %}
-        {{ content.field_header }}
-
-        {% if tasks|render and page %}
-          <div class="page__tasks">
-            <div class="container">
-              {{ tasks }}
-            </div>
-          </div>
-        {% endif %}
-
+    {% if not page %}
+      <h2 class="node__title"><a href="{{ url }}">{{ label }}</a></h2>
     {% endif %}
-
-    {{ content|without('field_header') }}
+    {{ content }}
   {% endblock %}
 </article>
-
