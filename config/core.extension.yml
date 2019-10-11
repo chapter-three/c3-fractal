@@ -74,7 +74,6 @@ module:
   pathauto: 1
   views: 10
   paragraphs: 11
-  fieldz_formatterz: 12
   kickstart: 1000
 theme:
   stable: 0

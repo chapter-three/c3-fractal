@@ -8,16 +8,12 @@ dependencies:
     - paragraphs.paragraphs_type.blockquote
   module:
     - field_layout
+    - layout_discovery
     - text
-  theme:
-    - fractal
 third_party_settings:
   field_layout:
-    id: pattern_blockquote
-    settings:
-      pattern:
-        field_templates: only_content
-        variant: default
+    id: layout_onecol
+    settings: {  }
 _core:
   default_config_hash: m5EFKI6zaa5DLY-YQK5AC1UGt_E126-tO2XPPojrK3I
 id: paragraph.blockquote.default
@@ -28,7 +24,7 @@ content:
   field_blockquote_source:
     type: string
     weight: 1
-    region: attribution
+    region: content
     label: hidden
     settings:
       link_to_entity: false
@@ -39,5 +35,5 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: text_default
-    region: quote
+    region: content
 hidden: {  }

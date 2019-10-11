@@ -3,13 +3,13 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.teaser
     - field.storage.node.field_answer
     - node.type.faq
     - system.menu.main
   module:
     - node
     - text
-    - ui_patterns_views
     - user
 _core:
   default_config_hash: IEe9mVoWdY3hNNc8Yu0PxWVXuCUnb4jAi9mwzBzX7A0
@@ -64,34 +64,10 @@ display:
           row_class: ''
           default_row_class: true
       row:
-        type: ui_patterns
+        type: 'entity:node'
         options:
-          default_field_elements: 0
-          inline:
-            title: 0
-            field_answer: 0
-            view_node: 0
-          separator: ''
-          hide_empty: 0
-          pattern: card
-          variants:
-            blockquote: default
-          pattern_mapping:
-            'views_row:title':
-              destination: title
-              weight: 0
-              plugin: views_row
-              source: title
-            'views_row:view_node':
-              destination: url
-              weight: 1
-              plugin: views_row
-              source: view_node
-            'views_row:field_answer':
-              destination: body
-              weight: 2
-              plugin: views_row
-              source: field_answer
+          relationship: none
+          view_mode: teaser
       fields:
         title:
           id: title

@@ -6,16 +6,13 @@ dependencies:
     - field.field.paragraph.button_group.field_buttons
     - paragraphs.paragraphs_type.button_group
   module:
+    - entity_reference_revisions
     - field_layout
-  theme:
-    - fractal
+    - layout_discovery
 third_party_settings:
   field_layout:
-    id: pattern_buttons
-    settings:
-      pattern:
-        field_templates: only_content
-        variant: default
+    id: layout_onecol
+    settings: {  }
 _core:
   default_config_hash: SaCNzHEFHKrX7ktSyXYz2BJIqpDNgP0ssCZyggv2UB4
 id: paragraph.button_group.default
@@ -25,11 +22,19 @@ mode: default
 content:
   extra_field_button_group_paragraph_field_data:
     weight: 0
-    region: buttons
+    region: content
     settings: {  }
+    third_party_settings: {  }
+  field_buttons:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
     third_party_settings: {  }
 hidden:
   extra_field_field_image_media_reference_url: true
   extra_field_field_link_text: true
   extra_field_field_link_url: true
-  field_buttons: true

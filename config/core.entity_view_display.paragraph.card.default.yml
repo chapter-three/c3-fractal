@@ -10,16 +10,13 @@ dependencies:
     - paragraphs.paragraphs_type.card
   module:
     - field_layout
+    - layout_discovery
+    - link
     - text
-  theme:
-    - fractal
 third_party_settings:
   field_layout:
-    id: pattern_card
-    settings:
-      pattern:
-        field_templates: only_content
-        variant: ''
+    id: layout_onecol
+    settings: {  }
 _core:
   default_config_hash: 5MsvtJZR3qB-T9xGBlBTUCKXOP5gi_7u3DfJzXxmYdQ
 id: paragraph.card.default
@@ -29,30 +26,49 @@ mode: default
 content:
   extra_field_field_image_media_reference_url:
     weight: 3
-    region: img
+    region: content
     settings: {  }
     third_party_settings: {  }
   extra_field_field_link_url:
     weight: 1
-    region: url
+    region: content
     settings: {  }
+    third_party_settings: {  }
+  field_image:
+    type: entity_reference_entity_view
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      view_mode: card
+      link: false
+    third_party_settings: {  }
+  field_link:
+    type: link
+    weight: 3
+    region: content
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
     third_party_settings: {  }
   field_text:
     type: text_default
     weight: 2
-    region: body
+    region: content
     label: hidden
     settings: {  }
     third_party_settings: {  }
   field_title:
     type: string
-    weight: 0
-    region: title
+    weight: 1
+    region: content
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
 hidden:
   extra_field_field_link_text: true
-  field_image: true
-  field_link: true

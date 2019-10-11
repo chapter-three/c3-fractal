@@ -8,16 +8,13 @@ dependencies:
     - paragraphs.paragraphs_type.button
   module:
     - field_layout
+    - layout_discovery
+    - link
     - options
-  theme:
-    - fractal
 third_party_settings:
   field_layout:
-    id: pattern_button
-    settings:
-      pattern:
-        field_templates: only_content
-        variant: default
+    id: layout_onecol
+    settings: {  }
 _core:
   default_config_hash: vpUA4ymMBTOaFuC5rB__jV6ruJR4B6wXVDpDSLj_Woo
 id: paragraph.button.default
@@ -27,21 +24,32 @@ mode: default
 content:
   extra_field_field_link_text:
     weight: 0
-    region: text
+    region: content
     settings: {  }
     third_party_settings: {  }
   extra_field_field_link_url:
     weight: 1
-    region: url
+    region: content
     settings: {  }
     third_party_settings: {  }
   field_button_style:
     type: list_key
-    weight: 2
-    region: style
+    weight: 0
+    region: content
     label: hidden
     settings: {  }
     third_party_settings: {  }
+  field_link:
+    type: link
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
 hidden:
   extra_field_field_image_media_reference_url: true
-  field_link: true
