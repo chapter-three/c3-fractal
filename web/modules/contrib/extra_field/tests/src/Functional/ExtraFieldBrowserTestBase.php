@@ -9,7 +9,7 @@ use Drupal\Tests\BrowserTestBase;
 /**
  * Base class for Extra Field browser tests.
  */
-class ExtraFieldBrowserTestBase extends BrowserTestBase {
+abstract class ExtraFieldBrowserTestBase extends BrowserTestBase {
 
   /**
    * The machine name of the node type used for the test.
@@ -52,7 +52,7 @@ class ExtraFieldBrowserTestBase extends BrowserTestBase {
     /** @var \Drupal\Core\Entity\ContentEntityInterface $node */
     $node = \Drupal::entityTypeManager()->getStorage('node')->create([
       'type' => $contentType,
-      'title' => $this->randomString(),
+      'title' => $this->randomMachineName(),
     ]);
     $node->save();
 
@@ -73,6 +73,7 @@ class ExtraFieldBrowserTestBase extends BrowserTestBase {
     $modules = ['extra_field_test'];
     $success = $this->container->get('module_installer')->install($modules, TRUE);
     $this->assertTrue($success, new FormattableMarkup('Enabled modules: %modules', ['%modules' => implode(', ', $modules)]));
+    $this->resetAll();
   }
 
 }

@@ -25,12 +25,20 @@ class ExtraFieldDisplayFieldTest extends ExtraFieldBrowserTestBase {
   protected $firstNode;
 
   /**
+   * A second node.
+   *
+   * @var \Drupal\node\Entity\Node
+   */
+  protected $secondNode;
+
+  /**
    * {@inheritdoc}
    */
   protected function setUp() {
     parent::setUp();
 
     $this->firstNode = $this->createContent('first_node_type');
+    $this->secondNode = $this->createContent('another_node_type');
     $this->setupEnableExtraFieldTestModule();
   }
 
@@ -53,6 +61,11 @@ class ExtraFieldDisplayFieldTest extends ExtraFieldBrowserTestBase {
     $this->assertSession()->responseContains('<div class="field__item">Aap</div>');
     $this->assertSession()->responseContains('<div class="field__item">Noot</div>');
     $this->assertSession()->responseContains('field--name-extra-field-multiple-text-test');
+
+    // Test the output of field with cacheable dependency.
+    $this->assertSession()->responseContains('<div class="field__label">Related pages</div>');
+    $this->assertSession()->responseContains('<div class="field__item">' . $this->secondNode->label() . '</div>');
+    $this->assertCacheTag('node:' . $this->secondNode->id());
 
     // Test the output of field without content.
     $this->assertSession()->responseNotContains('field--name-extra-field-empty-formatted-test');

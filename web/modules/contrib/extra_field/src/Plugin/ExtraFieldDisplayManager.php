@@ -85,11 +85,10 @@ class ExtraFieldDisplayManager extends DefaultPluginManager implements ExtraFiel
 
     $definitions = $this->getDefinitions();
     $entityBundleKey = $this->entityBundleKey($entity->getEntityTypeId(), $entity->bundle());
-    foreach ($definitions as $definition) {
+    foreach ($definitions as $pluginId => $definition) {
       if ($this->matchEntityBundleKey($definition['bundles'], $entityBundleKey)) {
 
         $factory = $this->getFactory();
-        $pluginId = $definition['id'];
         if ($display->getComponent($this->fieldName($pluginId))) {
 
           /** @var ExtraFieldDisplayInterface $plugin */

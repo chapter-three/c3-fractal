@@ -68,6 +68,7 @@ abstract class ExtraFieldDisplayFormattedBase extends ExtraFieldDisplayBase impl
 
       if ($children = Element::children($elements, TRUE)) {
         $build['#is_multiple'] = TRUE;
+        $build['#cache'] = !empty($elements['#cache']) ? $elements['#cache'] : [];
 
         // Without #children the field will not show up.
         $build['#children'] = '';
