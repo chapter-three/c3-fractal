@@ -34,8 +34,8 @@ settings:
       callout_group: callout_group
       card_group: card_group
       cta: cta
-      text_image: text_image
       text: text
+      text_image: text_image
     target_bundles_drag_drop:
       blockquote:
         enabled: true
@@ -51,13 +51,13 @@ settings:
         enabled: false
       card_group:
         enabled: true
-      hero:
-        enabled: false
       cta:
         enabled: true
-      text_image:
-        enabled: true
+      hero:
+        enabled: false
       text:
+        enabled: true
+      text_image:
         enabled: true
       title_bar:
         enabled: false
