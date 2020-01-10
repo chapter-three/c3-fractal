@@ -1,0 +1,30 @@
+uuid: b9c39bd6-41bf-4d8f-8b93-b907c7c0c68e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b0b4fd9e-4a0c-4c21-b1b4-77ed6586d40c'
+  enforced:
+    module:
+      - kickstart_content
+  module:
+    - block_content
+  theme:
+    - bartik
+_core:
+  default_config_hash: qaeLSCrHGFVGqDngK67e3qt1Qm5Mf_UFXBdSoEL_jAo
+id: bartik_social
+theme: bartik
+region: footer_first
+weight: -7
+provider: null
+plugin: 'block_content:b0b4fd9e-4a0c-4c21-b1b4-77ed6586d40c'
+settings:
+  id: 'block_content:b0b4fd9e-4a0c-4c21-b1b4-77ed6586d40c'
+  label: 'Social links'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

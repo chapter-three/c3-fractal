@@ -1,0 +1,22 @@
+uuid: aaa8f212-41f3-41dc-aa46-91bd66f28e83
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bartik
+_core:
+  default_config_hash: 79OOm00iQwz40VG5FNau8Q0TKRmUZQo_dw4BwVBLd10
+id: bartik_messages
+theme: bartik
+region: content
+weight: -2
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  provider: system
+  label_display: '0'
+visibility: {  }
